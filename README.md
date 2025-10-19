@@ -2,6 +2,13 @@
 ※環境構築がメインです。  
 Docker環境で構築しフロントエンドはReact、バックエンドはLaravelでAPIを取得しています。  
 
+## 環境構築  
+$docker-compose exec php bash  
+composer create-project "laravel/laravel=8.*" . --prefer-dist  
+
+laravel/に移動  
+cp .env.example .env  
+
 ## Docker内での接続設定  
 Docker内で起動しているViteは、デフォルトでは localhost(127.0.0.1)からのアクセスのみ  
 
