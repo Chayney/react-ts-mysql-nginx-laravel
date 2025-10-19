@@ -2,13 +2,13 @@
 ※環境構築がメインです。  
 Docker環境で構築しフロントエンドはReact、バックエンドはLaravelでAPIを取得しています。  
 
-## viteでの接続設定  
+## Docker内での接続設定  
 Docker内で起動しているViteは、デフォルトでは localhost(127.0.0.1)からのアクセスのみ  
-plugins: [react()],
-  server: {
-    host: '0.0.0.0',
-    port: 5173
-  },
+plugins: [react()],  
+  server: {  
+    host: '0.0.0.0',  
+    port: 5173  
+  },  
 
 ## Laravel Sanctum SPA認証 
 ### Sanctumのインストール
