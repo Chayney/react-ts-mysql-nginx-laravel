@@ -4,6 +4,7 @@ Docker環境で構築しフロントエンドはReact、バックエンドはLar
 
 ## Docker内での接続設定  
 Docker内で起動しているViteは、デフォルトでは localhost(127.0.0.1)からのアクセスのみ  
+vite.confug.ts  
 plugins: [react()],  
   server: {  
     host: '0.0.0.0',  
